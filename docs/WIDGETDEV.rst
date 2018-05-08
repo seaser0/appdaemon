@@ -472,7 +472,7 @@ Next we need to set up our ``self`` variable:
         self = this
 
 For the uninitiated, JavaScript has a somewhat confused notion of scopes when using objects, as scopes can be inherited
-from different places depebding on the mechanism for calling intto the code. In Widgets, various tricks have been used
+from different places depending on the mechanism for calling into the code. In Widgets, various tricks have been used
 to present a consistent view to the user which requires an initial declaration of the self variable. From then on,
 all calls pass this variable between calls to ensure consistency. It is recomended that the convention of
 declaring ``self = this`` at the top of the function then rigidly sticking to the use of ``self`` is adhered to,
